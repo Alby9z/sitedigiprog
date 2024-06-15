@@ -1168,37 +1168,37 @@ ol {
 }
 .blog__item1.latest__item:hover {
   border: 1px solid #222222 !important;
-  background: url(../img/team/work1.webp);
+  background-image: url(../img/team/work1.webp);
   background-size: cover;
 }
 .blog__item2.latest__item:hover {
   border: 1px solid #222222 !important;
-  background: url(../img/team/work2.webp);
+  background-image: url(../img/team/work2.webp);
   background-size: cover;
 }
 .blog__item3.latest__item:hover {
   border: 1px solid #222222 !important;
-  background: url(../img/team/work3.webp);
+  background-image: url(../img/team/work3.webp);
   background-size: cover;
 }
 .blog__item4.latest__item:hover {
   border: 1px solid #222222 !important;
-  background: url(../img/team/footer.png);
+  background-image: url(../img/team/footer.png);
   background-size: cover;
 }
 .blog__item5.latest__item:hover {
   border: 1px solid #222222 !important;
-  background: url(../img/team/avis.png);
+  background-image: url(../img/team/avis.png);
   background-size: cover;
 }
 .blog__item6.latest__item:hover {
   border: 1px solid #222222 !important;
-  background: url(../img/team/map.png);
+  background-image: url(../img/team/map.png);
   background-size: cover;
 }
 .blog__item7.latest__item:hover {
   border: 1px solid #222222 !important;
-  background: url(../img/team/barre.png);
+  background-image: url(../img/team/barre.png);
   background-size: cover;
 }
 
@@ -1756,7 +1756,12 @@ ol {
   background: #100028;
 }
 
-.blog__item {
+.blog__item,
+.blog__item1,
+.blog__item2,
+.blog__item3,
+.blog__item4,
+.blog__item5 {
   border: 1px solid #222222;
   padding: 40px 48px 35px 30px;
   position: relative;
@@ -1765,7 +1770,33 @@ ol {
 }
 .blog__item:hover {
   border: 1px solid transparent !important;
-  background: url(../img/blog/blog-2.jpg) no-repeat;
+  background: url(/img/blog/blog-numerique.jpg) no-repeat;
+  background-size: cover;
+}
+.blog__item1:hover {
+  border: 1px solid transparent !important;
+  background: url(/img/blog/blog-dev.jpg) no-repeat;
+  background-size: cover;
+}
+.blog__item2:hover {
+  border: 1px solid transparent !important;
+  background: url(/img/blog/graphiques.png) no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.blog__item3:hover {
+  border: 1px solid transparent !important;
+  background: url(/img/blog/blog-design.jpg) no-repeat;
+  background-size: cover;
+}
+.blog__item4:hover {
+  border: 1px solid transparent !important;
+  background: url(/img/blog/blog-logiciel.jpg) no-repeat;
+  background-size: cover;
+}
+.blog__item5:hover {
+  border: 1px solid transparent !important;
+  background: url(/img/blog/blog-securite.jpg) no-repeat;
   background-size: cover;
 }
 .blog__item:hover ul li {
@@ -1822,13 +1853,20 @@ ol {
   margin-left: 5px;
 }
 
-/*---------------------
-  Blog Details Hero
------------------------*/
-.blog-hero {
-  padding: 300px 0 230px;
+.blog-hero3,
+.blog-hero4 {
+  background-position: top;
 }
-
+.blog-hero {
+  padding: 265px 0 80px;
+}
+.blog-hero2,
+.blog-hero1 {
+  background-position: bottom;
+}
+.blog-hero5 {
+  background-position: right;
+}
 .blog__hero__text {
   text-align: center;
 }
