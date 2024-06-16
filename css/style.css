@@ -2801,3 +2801,34 @@ ol {
   color: #fff;
   scale: 3;
 }
+.container-politique {
+  padding: 15px;
+  background-color: #4e2a4c;
+  border: solid 1px #6b227e;
+  box-shadow: 0 4px 8px 0 rgba(107, 34, 126, 0.5);
+}
+.container-politique .container2 {
+  padding: 140px;
+  background-color: white;
+  border-radius: 5px;
+}
+.container-politique h1 {
+  color: #6b227e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container-politique h2 {
+  color: #6b227e;
+  margin-top: 20px;
+}
+.container-politique p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.container-politique ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+.container-politique ul li {
+  margin-bottom: 10px;
+}
