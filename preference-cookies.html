@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gérer les préférences de cookies</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      h1 {
+        text-align: center;
+        color: #6b227e;
+      }
+      label {
+        display: block;
+        margin-bottom: 15px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #6b227e;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      button:hover {
+        background-color: #450f4f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gérer les préférences de cookies</h1>
+      <form id="cookie-preferences-form">
+        <label>
+          <input type="checkbox" id="preferences-cookies" /> Activer les cookies
+          de préférence
+        </label>
+        <label>
+          <input type="checkbox" id="analytics-cookies" /> Activer les cookies
+          d'analyse
+        </label>
+        <button type="button" onclick="savePreferences()">Enregistrer</button>
+        <button type="button" onclick="cancel()">Annuler</button>
+      </form>
+    </div>
+
+    <script>
+      function savePreferences() {
+        var preferencesAccepted = document.getElementById(
+          "preferences-cookies"
+        ).checked;
+        var analyticsAccepted =
+          document.getElementById("analytics-cookies").checked;
+
+        // Enregistrez les préférences ici, par exemple dans les cookies
+        setCookie("preferences_accepted", preferencesAccepted.toString(), 365);
+        setCookie("analytics_accepted", analyticsAccepted.toString(), 365);
+
+        alert("Vos préférences de cookies ont été enregistrées.");
+
+        window.location.href = "/Acceuil.html";
+      }
+
+      function cancel() {
+        // Annuler l'édition des préférences, par exemple fermer la fenêtre modale
+        // Ici vous pouvez ajouter du code pour fermer la fenêtre modale ou retourner à la page précédente
+        alert("Annulation des modifications.");
+      }
+
+      // Fonction utilitaire pour définir un cookie
+      function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      }
+
+      // Vous pouvez ajouter d'autres fonctions pour gérer les cookies selon vos besoins
+    </script>
+  </body>
+</html>

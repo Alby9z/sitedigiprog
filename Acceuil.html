@@ -6,7 +6,6 @@
     <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Digiprogtech_Acceuil</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
@@ -22,11 +21,49 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Digiprogtech_Acceuil</title>
   </head>
   <body>
     <div id="preloder">
       <div class="loader"></div>
     </div>
+    <div id="cookie-banner">
+      <p>
+        Nous utilisons des cookies pour améliorer votre expérience sur notre
+        site. En continuant à naviguer sur ce site, vous acceptez notre
+        utilisation des cookies.
+        <a href="/politiques/Politiques_De_Cookies.html">En savoir plus</a>.
+      </p>
+      <button onclick="managePreferences()">Gérer mes préférences</button>
+      <button onclick="acceptAllCookies()">Tout accepter</button>
+      <button onclick="declineAllCookies()">Tout refuser</button>
+    </div>
+
+    <div id="cookie-preferences-modal" style="display: none">
+      <div class="modal-content">
+        <h2>Gérer les préférences de cookies</h2>
+        <form id="cookie-preferences-form">
+          <label>
+            <input type="checkbox" id="preferences-cookies" /> Activer les
+            cookies de préférence
+          </label>
+          <label>
+            <input type="checkbox" id="analytics-cookies" /> Activer les cookies
+            d'analyse
+          </label>
+          <button type="button" onclick="savePreferences()">Enregistrer</button>
+          <button type="button" onclick="closePreferences()">Fermer</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        if (getCookie("cookies_accepted") === null) {
+          document.getElementById("cookie-banner").style.display = "block";
+        }
+      };
+    </script>
+
     <header class="header">
       <div class="container">
         <div class="row">
@@ -637,7 +674,7 @@
                     class="fa fa-paper-plane"
                     name="diamond-outline"
                   ></ion-icon>
-                  <h2>Pack Autonome</h2>
+                  <h2>Création Autonome</h2>
                 </div>
                 <div class="price">
                   <h4><sup>€</sup>690</h4>
@@ -646,23 +683,50 @@
                   <ul>
                     <li>
                       <i aria-hidden="true"></i>Accès à une suite d'outils pour
-                      auditer et développer votre site.
+                      créer votre site.
                     </li>
                     <li>
-                      <i aria-hidden="true"></i>Guide PDF pour utiliser les
-                      outils et optimiser le SEO.
+                      <i aria-hidden="true"></i>Guide PDF pour vous guider dans
+                      la création et l'optimisation.
                     </li>
                     <li>
-                      <i aria-hidden="true"></i>Consultation téléphonique
-                      initiale d'une heure.
+                      <i aria-hidden="true"></i>Support par email pour répondre
+                      à vos questions.
+                    </li>
+                  </ul>
+                </div>
+                <a href="./contact.html">Contactez-Nous</a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-sm-33">
+              <div class="card-price text-center">
+                <div class="title-price">
+                  <ion-icon
+                    class="fa fa-paper-plane"
+                    name="school-outline"
+                  ></ion-icon>
+                  <h2>Création Personnalisée</h2>
+                </div>
+                <div class="price">
+                  <h4><sup>€</sup>1490</h4>
+                </div>
+                <div class="option-price">
+                  <ul>
+                    <li>
+                      <i aria-hidden="true"></i>Accès à des outils avancés pour
+                      personnaliser votre site.
                     </li>
                     <li>
-                      <i aria-hidden="true"></i>Support par email pendant 30
-                      jours.
+                      <i aria-hidden="true"></i>Documents détaillés pour
+                      maximiser la personnalisation et le SEO.
                     </li>
                     <li>
-                      <i aria-hidden="true"></i>Assistance pour la mise en place
-                      initiale du site.
+                      <i aria-hidden="true"></i>Consultation téléphonique pour
+                      discuter de vos besoins.
+                    </li>
+                    <li>
+                      <i aria-hidden="true"></i>Support continu par email et
+                      téléphone.
                     </li>
                   </ul>
                 </div>
@@ -674,52 +738,9 @@
                 <div class="title-price">
                   <ion-icon
                     class="fa fa-paper-plane"
-                    name="school-outline"
-                  ></ion-icon>
-                  <h2>Pack Formation</h2>
-                </div>
-                <div class="price">
-                  <h4><sup>€</sup>1490</h4>
-                </div>
-                <div class="option-price">
-                  <ul>
-                    <li>
-                      <i aria-hidden="true"></i>Accès complet à des outils
-                      d'audit et de développement avancés.
-                    </li>
-                    <li>
-                      <i aria-hidden="true"></i>Documents PDF pour maximiser le
-                      SEO.
-                    </li>
-                    <li>
-                      <i aria-hidden="true"></i>Consultation téléphonique
-                      initiale de 2h ( deux fois 1h )
-                    </li>
-                    <li>
-                      <i aria-hidden="true"></i>Formation en visio de 2 heures
-                      sur l'utilisation des outils.
-                    </li>
-                    <li>
-                      <i aria-hidden="true"></i>Support par email pendant 90
-                      jours.
-                    </li>
-                    <li>
-                      <i aria-hidden="true"></i>Assistance complète pour la
-                      création de votre site.
-                    </li>
-                  </ul>
-                </div>
-                <a href="./contact.html">Contactez-Nous</a>
-              </div>
-            </div>
-            <div class="col-sm-4 col-sm-18">
-              <div class="card-price text-center">
-                <div class="title-price">
-                  <ion-icon
-                    class="fa fa-paper-plane"
                     name="people-outline"
                   ></ion-icon>
-                  <h2>Pack Collaboratif</h2>
+                  <h2>Création Complète</h2>
                 </div>
                 <div class="price">
                   <h4><sup>€</sup>2490</h4>
@@ -727,36 +748,24 @@
                 <div class="option-price">
                   <ul>
                     <li>
+                      <i aria-hidden="true"></i>Création complète de votre site
+                      avec un rapport détaillé.
+                    </li>
+                    <li>
                       <i aria-hidden="true"></i>Utilisation d'outils experts
-                      pour auditer et développer le site.
+                      pour optimiser votre présence en ligne.
                     </li>
                     <li>
-                      <i aria-hidden="true"></i>Guides PDF détaillés pour
-                      optimisation SEO.
+                      <i aria-hidden="true"></i>Consultation stratégique pour
+                      définir vos objectifs.
                     </li>
                     <li>
-                      <i aria-hidden="true"></i>Consultation téléphonique
-                      initiale pour définir les objectifs.
-                    </li>
-                    <li>
-                      <i aria-hidden="true"></i>Formation intensive de 4 heures
-                      (sessions de 2h chacune).
-                    </li>
-                    <li>
-                      <i aria-hidden="true"></i>Travail collaboratif avec
-                      interventions régulières.
-                    </li>
-                    <li>
-                      <i aria-hidden="true"></i>Support par email et téléphone
-                      pendant 6 mois.
+                      <i aria-hidden="true"></i>Support intensif par email et
+                      téléphone.
                     </li>
                     <li>
                       <i aria-hidden="true"></i>Plan d'action personnalisé pour
-                      amélioration continue.
-                    </li>
-                    <li>
-                      <i aria-hidden="true"></i>Création et optimisation
-                      complète du site avec notre équipe.
+                      votre succès en ligne.
                     </li>
                   </ul>
                 </div>
@@ -805,6 +814,7 @@
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
@@ -912,6 +922,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="js/cookies.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>

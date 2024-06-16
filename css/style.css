@@ -2645,7 +2645,7 @@ ol {
   margin: 42px 0px 0px -115px;
 }
 .col-sm-96 {
-  margin: 105px 0px 0px -45px;
+  margin: 105px -55px 0px -45px;
 }
 .col-sm-33 {
   margin: 34px 0px 0px -60px;
@@ -2809,7 +2809,7 @@ ol {
 }
 .container-politique .container2 {
   padding: 140px;
-  background-color: white;
+  background-color: #dfdfdf;
   border-radius: 5px;
 }
 .container-politique h1 {
@@ -2822,6 +2822,7 @@ ol {
   margin-top: 20px;
 }
 .container-politique p {
+  color: #000;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -2831,4 +2832,51 @@ ol {
 }
 .container-politique ul li {
   margin-bottom: 10px;
+}
+/* Styles pour le cookie banner */
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6b227e;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(107, 34, 126, 0.5);
+  z-index: 1000;
+}
+
+#cookie-banner a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+#cookie-banner button {
+  background-color: #ffffff;
+  color: #6b227e;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Styles pour le modal des préférences de cookies */
+#cookie-preferences-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
