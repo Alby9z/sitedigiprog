@@ -52,9 +52,26 @@ p {
 .arobase {
   margin: -10px 190px -28px 0px;
 }
+.header__logo a img {
+  border: solid 1px #6b227e;
+  box-shadow: 0 0px 8px 0 rgb(187 36 227 / 50%);
+  scale: 1.5;
+  border-radius: 50px;
+  max-width: 57%;
+}
+.footer__top__logo a img {
+  position: absolute;
+  height: 85px;
+  width: 85px;
+  border: solid 1px #6b227e;
+  box-shadow: 0 0px 8px 0 rgb(187 36 227 / 50%);
+  scale: 1.5;
+  border-radius: 50px;
+  max-width: 57%;
+}
 img {
-  border-radius: 50%;
-  max-width: 100%;
+  border-radius: 50px;
+  max-width: 57%;
 }
 
 input:focus,
