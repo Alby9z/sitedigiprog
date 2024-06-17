@@ -7,7 +7,6 @@ function setCookie(name, value, days) {
   }
   document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }
-
 function getCookie(name) {
   var nameEQ = name + "=";
   var ca = document.cookie.split(";");
@@ -18,37 +17,29 @@ function getCookie(name) {
   }
   return null;
 }
-
 function eraseCookie(name) {
   document.cookie = name + "=; Max-Age=-99999999;";
 }
-
 function acceptAllCookies() {
   setCookie("cookies_accepted", "true", 365);
   setCookie("preferences_accepted", "true", 365);
   setCookie("analytics_accepted", "true", 365);
   document.getElementById("cookie-banner").style.display = "none";
-  document.getElementById("cookie-banner").innerHTML =
-    "Tous les cookies acceptés.";
+  alert("Tous les cookies acceptés.");
 }
-
 function declineAllCookies() {
   eraseCookie("cookies_accepted");
   eraseCookie("preferences_accepted");
   eraseCookie("analytics_accepted");
   document.getElementById("cookie-banner").style.display = "none";
-  document.getElementById("cookie-banner").innerHTML =
-    "Tous les cookies refusés.";
+  alert("Tous les cookies refusés.");
 }
-
 function managePreferences() {
   document.getElementById("cookie-preferences-modal").style.display = "block";
 }
-
 function closePreferences() {
   document.getElementById("cookie-preferences-modal").style.display = "none";
 }
-
 function savePreferences() {
   var preferencesAccepted = document.getElementById(
     "preferences-cookies"
@@ -60,7 +51,6 @@ function savePreferences() {
 
   document.getElementById("cookie-preferences-modal").style.display = "none";
   document.getElementById("cookie-banner").style.display = "none";
-
-  // Redirection vers la page d'accueil après avoir enregistré les préférences
-  window.location.href = "./Acceuil.html";
+  alert("Vos préférences ont été enregistrées.");
 }
+window.onloa;
