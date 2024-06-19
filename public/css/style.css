@@ -140,7 +140,7 @@ ol {
 
 .spad {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .colorlib-skills {
@@ -1776,11 +1776,14 @@ ol {
 .blog__item3,
 .blog__item4,
 .blog__item5 {
-  border: 1px solid #222222;
+  border: 1px solid #00d9ff;
   padding: 40px 48px 35px 30px;
   position: relative;
   z-index: 1;
   margin-bottom: 45px;
+}
+.text-blog {
+  margin-top: 35px;
 }
 .blog__item:hover {
   border: 1px solid transparent !important;
@@ -1937,7 +1940,7 @@ ol {
 }
 
 .blog__details__quote {
-  border: 1px solid rgba(225, 225, 225, 0.8);
+  border: 1px solid rgba(0, 225, 255, 0.8);
   padding: 35px 90px 35px 40px;
   position: relative;
   margin-bottom: 35px;
