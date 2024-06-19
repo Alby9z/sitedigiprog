@@ -2831,3 +2831,12 @@ ol {
 .modal-content button:hover {
   background-color: #4f0f0f;
 }
+.responsive-design {
+  border-bottom: solid #64b5f6 2px;
+  background-color: #100028;
+  border-top: solid #64b5f6 2px;
+}
+.ul-responsive {
+  color: #ffffff;
+  padding: 60px;
+}
