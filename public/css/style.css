@@ -143,7 +143,7 @@ ol {
   padding-bottom: 50px;
 }
 
-.colorlib-skills {
+.skills {
   margin-top: -80px;
   background: #340a74;
   padding-top: 2em;
@@ -152,11 +152,11 @@ ol {
   width: 100%;
   display: block;
 }
-.colorlib-narrow-content {
+.narrow-content {
   padding: 0 2.5em;
 }
 @media screen and (max-width: 768px) {
-  .colorlib-narrow-content {
+  .narrow-content {
     padding: 0;
   }
 }
@@ -196,7 +196,7 @@ ol {
   font-weight: 500;
   letter-spacing: 5px;
 }
-.colorlib-heading {
+.heading {
   color: rgb(175 255 249);
   font-size: 28px;
   margin-bottom: 2em;
@@ -205,11 +205,11 @@ ol {
   letter-spacing: 5px;
   position: relative;
 }
-.colorlib-heading span {
+.heading span {
   display: block;
 }
 @media screen and (max-width: 768px) {
-  .colorlib-heading {
+  .heading {
     margin-bottom: 3em;
   }
 }
@@ -474,14 +474,14 @@ ol {
   color: #4054b2;
 }
 
-.colorlib-feature {
+.feature {
   text-align: left;
   width: 100%;
   float: left;
   margin-bottom: 40px;
   position: relative;
 }
-.colorlib-feature .colorlib-icon {
+.feature .icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -495,7 +495,7 @@ ol {
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
-.colorlib-feature .colorlib-icon i {
+.feature .icon i {
   display: table-cell;
   vertical-align: middle;
   color: #2c98f0;
@@ -503,20 +503,20 @@ ol {
   height: 100px;
 }
 @media screen and (max-width: 1200px) {
-  .colorlib-feature .colorlib-icon i {
+  .feature .icon i {
     font-size: 40px;
   }
 }
-.colorlib-feature .colorlib-text {
+.feature .text {
   padding-left: 120px;
   width: 100%;
 }
-.colorlib-feature .colorlib-text h2,
-.colorlib-feature .colorlib-text h3 {
+.feature .text h2,
+.feature .text h3 {
   margin: 0;
   padding: 0;
 }
-.colorlib-feature .colorlib-text h3 {
+.feature .text h3 {
   font-weight: 500;
   margin-bottom: 20px;
   color: rgba(0, 0, 0, 0.7);
@@ -524,15 +524,15 @@ ol {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
-.colorlib-feature.colorlib-feature-sm .colorlib-text {
+.feature.feature-sm .text {
   margin-top: 30px;
 }
-.colorlib-feature.colorlib-feature-sm .colorlib-icon i {
+.feature.feature-sm .icon i {
   color: #2c98f0;
   font-size: 40px;
 }
 @media screen and (max-width: 1200px) {
-  .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
+  .feature.feature-sm .icon i {
     font-size: 28px;
   }
 }
@@ -2836,6 +2836,7 @@ ol {
   border-bottom: solid #64b5f6 2px;
   background-color: #100028;
   border-top: solid #64b5f6 2px;
+  box-shadow: 0 -4px 6px rgba(100, 181, 246, 0.6);
 }
 .ul-responsive {
   color: #ffffff;
