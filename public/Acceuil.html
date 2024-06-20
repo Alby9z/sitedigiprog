@@ -42,20 +42,47 @@
       <button onclick="acceptAllCookies()">Tout accepter</button>
       <button onclick="declineAllCookies()">Tout refuser</button>
     </div>
-
     <div id="cookie-preferences-modal" style="display: none">
       <div class="modal-content">
         <h2>Gérer les préférences des cookies</h2>
         <label>
           <input type="checkbox" id="preferences-cookies" /> Activer les cookies
           de préférence
+          <p class="cookie-description">
+            Ces cookies permettent de mémoriser vos préférences sur le site,
+            comme votre langue préférée ou la région dans laquelle vous vous
+            trouvez.
+          </p>
         </label>
         <label>
           <input type="checkbox" id="analytics-cookies" /> Activer les cookies
           d'analyse
+          <p class="cookie-description">
+            Ces cookies nous aident à comprendre comment notre site est utilisé
+            et à améliorer votre expérience de navigation. Les données
+            collectées sont anonymes.
+          </p>
+        </label>
+        <label>
+          <input type="checkbox" id="marketing-cookies" /> Activer les cookies
+          de marketing
+          <p class="cookie-description">
+            Ces cookies sont utilisés pour vous présenter des publicités
+            pertinentes pour vous et vos centres d'intérêt.
+          </p>
         </label>
         <button onclick="savePreferences()">Enregistrer</button>
         <button onclick="closePreferences()">Fermer</button>
+        <p>
+          Pour plus d'informations, consultez notre
+          <a href="/public/politiques/Politiques_De_Confidentialités.html"
+            >Politique de confidentialité</a
+          >
+          et notre
+          <a href="/public/politiques/Politiques_De_Cookies.html"
+            >Politique de cookies</a
+          >
+        </p>
       </div>
     </div>
     <header class="header">
