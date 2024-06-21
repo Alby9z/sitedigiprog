@@ -8,7 +8,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 [data-icon]:before {
   font-family: "ElegantIcons";
   content: attr(data-icon);
@@ -1466,7 +1465,6 @@
 .icon_clipboard:before {
   content: "\e0e6";
 }
-
 .glyph {
   float: left;
   text-align: center;
@@ -1481,11 +1479,9 @@
   float: left;
   margin-right: 20px;
 }
-
 .glyph div {
   padding-bottom: 10px;
 }
-
 .glyph input {
   font-family: consolas, monospace;
   font-size: 12px;
