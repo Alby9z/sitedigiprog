@@ -235,7 +235,6 @@
     }
   }
 }
-
 .counter__item__text {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -313,7 +312,6 @@
       display: inline-block;
       font-size: 15px;
       margin-right: 18px;
-
       &:last-child {
         margin-right: 0;
       }
@@ -332,7 +330,6 @@
 .blog__item {
   &.latest__item {
     margin-bottom: 0;
-
     &:hover {
       border: 1px solid #222222 !important;
       background: url(../img/blog/blog-1.jpg);

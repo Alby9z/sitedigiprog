@@ -12,11 +12,9 @@
     display: inline-block;
     cursor: pointer;
     padding: 6px 22px;
-
     &.active {
       border: 1px solid $primary-color;
     }
-
     &:last-child {
       margin-right: 0;
     }
@@ -90,7 +88,6 @@
       }
       &:last-child {
         margin-right: 0;
-
         &:after {
           display: none;
         }
