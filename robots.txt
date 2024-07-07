@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /politiques/
+
+Sitemap: https://digiprogtechseo.com/sitemap.xml
+
